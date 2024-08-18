@@ -48,7 +48,7 @@ class ImportReportMail extends Mailable
      */
     public function __construct(array $log)
     {
-        $this->time     = date('Y-m-d \@ H:i:s');
+        $this->time     = "Bankname" . date('Y-m-d \@ H:i:s');
         $this->url      = (string) config('importer.url');
         $this->version  = config('importer.version');
         if ('' !== (string) config('importer.vanity_url')) {

@@ -1,5 +1,5 @@
 @component('mail::message')
-# Result of your import on {{ $time }}
+# Import - {{ $time }}
 
 <hr>
 
